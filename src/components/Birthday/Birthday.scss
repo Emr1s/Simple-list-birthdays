@@ -1,0 +1,63 @@
+.birthday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .list{
+        background: #fff;
+        height: max-content;
+        width: 250px;
+        padding: 20px;
+        border-radius: 5px;
+        color: #000;
+
+        .person{
+            display: flex;
+
+            .info{
+                display: flex;
+                margin: 0 10px;
+                flex-direction: column;
+                padding: 5px;
+
+                .name{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                .years{
+                    font-size: 14px;
+                    color: #999;
+                }
+
+            }
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px ;
+            color: rgba(255, 255, 255, 0.87);
+            background-color: #242424;
+            border: 1px solid #242424;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                background-color: #fff;
+                border: 1px solid #000;
+                color: #000;
+            }
+
+        }
+    }
+}
